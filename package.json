@@ -12,6 +12,12 @@
     "type": "git",
     "url": "https://github.com/doseofted/ignorefile.git"
   },
+  "bugs": {
+		"url": "https://github.com/doseofted/ignorefile/issues"
+	},
+  "publishConfig": {
+		"provenance": true
+	},
   "keywords": [
     "ignore",
     "ignorefile",
@@ -25,6 +31,11 @@
   "type": "module",
   "module": "dist/index.js",
   "bin": "dist/bin.js",
+  "exports": {
+		".": "./dist/index.js",
+		"./package.json": "./package.json"
+	},
+	"types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup --config build.config.ts",
     "lint": "eslint . --ext .ts",
@@ -33,6 +44,7 @@
     "test": "vitest"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@types/node": "^20.10.4",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
@@ -41,5 +53,8 @@
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vitest": "^1.0.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
