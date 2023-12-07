@@ -1,5 +1,5 @@
-import * as ignorefile from "."
+import * as ignorefile from ".";
 
-console.log("It's a WIP: we'll get there!")
+console.log("It's a WIP: we'll get there!");
 
-export default ignorefile
+export default ignorefile;

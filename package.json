@@ -3,27 +3,43 @@
   "version": "0.0.1",
   "description": "An ignore file not to be ignored",
   "author": {
-		"name": "Ted Klingenberg",
-		"email": "ted@doseofted.com",
-		"url": "https://doseofted.me/"
-	},
-	"contributors": [],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/doseofted/ignorefile.git"
-	},
-  "keywords": ["ignore", "ignorefile", "gitignore", "dockerignore", "npmignore", "prettierignore", "eslintignore"],
+    "name": "Ted Klingenberg",
+    "email": "ted@doseofted.com",
+    "url": "https://doseofted.me/"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doseofted/ignorefile.git"
+  },
+  "keywords": [
+    "ignore",
+    "ignorefile",
+    "gitignore",
+    "dockerignore",
+    "npmignore",
+    "prettierignore",
+    "eslintignore"
+  ],
   "license": "MIT",
   "type": "module",
   "module": "dist/index.js",
   "bin": "dist/bin.js",
   "scripts": {
     "build": "tsup --config build.config.ts",
-    "cli": "node dist/bin.js"
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "cli": "node dist/bin.js",
+    "test": "vitest"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "prettier": "3.1.0",
     "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.2"
   }
 }

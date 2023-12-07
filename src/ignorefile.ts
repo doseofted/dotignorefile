@@ -1,5 +1,5 @@
-function ignoreCreatedIgnoreFiles () {}
+// function ignoreCreatedIgnoreFiles() {}
 
 export function createIgnoreFile() {}
 
-export function splitIgnoreFile () {}
+export function splitIgnoreFile() {}

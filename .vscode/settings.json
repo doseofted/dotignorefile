@@ -1,6 +1,6 @@
 {
   "files.associations": {
     ".ignorefile": "ini",
-    ".config/.ignorefile": "ini",
+    ".config/.ignorefile": "ini"
   }
 }

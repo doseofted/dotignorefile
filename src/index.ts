@@ -1,1 +1,1 @@
-export * from "./ignorefile"
+export * from "./ignorefile";
