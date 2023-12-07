@@ -1,0 +1,13 @@
+[git]
+# .ignorefile-related
+.*ignore
+!.gitignore
+# build-related
+node_modules/
+dist/
+
+[prettier]
+dist/
+
+[eslint]
+dist/

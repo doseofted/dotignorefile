@@ -1,0 +1,29 @@
+{
+  "name": "ignorefile",
+  "version": "0.0.1",
+  "description": "An ignore file not to be ignored",
+  "author": {
+		"name": "Ted Klingenberg",
+		"email": "ted@doseofted.com",
+		"url": "https://doseofted.me/"
+	},
+	"contributors": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/doseofted/ignorefile.git"
+	},
+  "keywords": ["ignore", "ignorefile", "gitignore", "dockerignore", "npmignore", "prettierignore", "eslintignore"],
+  "license": "MIT",
+  "type": "module",
+  "module": "dist/index.js",
+  "bin": "dist/bin.js",
+  "scripts": {
+    "build": "tsup --config build.config.ts",
+    "cli": "node dist/bin.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
