@@ -1,5 +1,11 @@
 # dotignorefile
 
+## 0.0.5
+
+### Patch Changes
+
+- 20c8f2c: Created gitignore file now appends ignore files when .ignorefile is present
+
 ## 0.0.4
 
 ### Patch Changes
