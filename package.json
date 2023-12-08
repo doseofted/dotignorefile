@@ -11,10 +11,10 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/doseofted/ignorefile.git"
+    "url": "https://github.com/doseofted/dotignorefile.git"
   },
   "bugs": {
-		"url": "https://github.com/doseofted/ignorefile/issues"
+		"url": "https://github.com/doseofted/dotignorefile/issues"
 	},
   "publishConfig": {
 		"provenance": true
