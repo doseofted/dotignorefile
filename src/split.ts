@@ -1,9 +1,5 @@
 import { File } from "node:buffer";
 
-// function ignoreCreatedIgnoreFiles() {}
-
-// export function createIgnoreFile(presentIgnoreFiles: File[]) {}
-
 const defaultIgnoreSection = "[git]";
 export function splitIgnoreFileContent(fileContents: string) {
   const ignoreFile = fileContents;

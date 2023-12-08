@@ -19,5 +19,6 @@
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "cSpell.words": ["ignorefile"]
 }
