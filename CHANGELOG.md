@@ -1,5 +1,11 @@
 # dotignorefile
 
+## 0.0.6
+
+### Patch Changes
+
+- 0119e07: Added help and version argument support
+
 ## 0.0.5
 
 ### Patch Changes
