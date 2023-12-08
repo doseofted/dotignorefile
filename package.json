@@ -15,6 +15,9 @@
   "bugs": {
 		"url": "https://github.com/doseofted/ignorefile/issues"
 	},
+  "publishConfig": {
+		"provenance": true
+	},
   "keywords": [
     "ignore",
     "ignorefile",
