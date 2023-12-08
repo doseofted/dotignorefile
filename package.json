@@ -1,6 +1,6 @@
 {
   "name": "dotignorefile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.11.0",
   "description": "An ignore file not to be ignored",
   "author": {
@@ -14,11 +14,11 @@
     "url": "https://github.com/doseofted/dotignorefile.git"
   },
   "bugs": {
-		"url": "https://github.com/doseofted/dotignorefile/issues"
-	},
+    "url": "https://github.com/doseofted/dotignorefile/issues"
+  },
   "publishConfig": {
-		"provenance": true
-	},
+    "provenance": true
+  },
   "keywords": [
     "ignore",
     "ignorefile",
@@ -33,10 +33,10 @@
   "module": "dist/index.js",
   "bin": "dist/bin.js",
   "exports": {
-		".": "./dist/index.js",
-		"./package.json": "./package.json"
-	},
-	"types": "./dist/index.d.ts",
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup --config build.config.ts",
     "lint": "eslint . --ext .ts",
