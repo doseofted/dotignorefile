@@ -18,3 +18,9 @@
 ### Patch Changes
 
 - f92f202: Updated repository name
+
+## 0.0.1
+
+### Patch Changes
+
+- 5ad14e9: Initial release
