@@ -2,6 +2,7 @@
 import { question, echo } from "zx";
 import { createIgnorefile, findIgnorefile } from "./create";
 import { appendIgnoresToGitignore, findIgnoreFiles } from "./ignores";
+import { createIgnores, splitIgnoreFile } from "./split";
 
 echo`dotignorefile is in alpha: commit all changes prior to running this utility.\n`;
 
@@ -34,5 +35,7 @@ const answer = await question(
 );
 const create = ["y", "yes"].includes(answer);
 if (create) {
-  echo`WIP: no ignore files were created yet, coming soon!`;
+  const ignoreFiles = await splitIgnoreFile(found);
+  await createIgnores(ignoreFiles);
+  echo`Ignore files have been created from your .ignorefile`;
 }

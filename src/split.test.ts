@@ -28,13 +28,13 @@ ${eslintignore}
 test(".ignorefile contents gets split", async () => {
   const sections = ignorefile.splitIgnoreFileContent(testIgnoreFile);
   expect(sections).toBeTypeOf("object");
-  expect(sections).toHaveProperty("[git]");
+  expect(sections).toHaveProperty("git");
   // FIXME: `.toContain(...)` test should become `.toBe(...)` to match whitespace (but this does work regardless)
-  expect(sections["[git]"]).toContain(gitignore);
-  expect(sections).toHaveProperty("[prettier]");
-  expect(sections["[prettier]"]).toContain(prettierignore);
-  expect(sections).toHaveProperty("[eslint]");
-  expect(sections["[eslint]"]).toContain(eslintignore);
+  expect(sections["git"]).toContain(gitignore);
+  expect(sections).toHaveProperty("prettier");
+  expect(sections["prettier"]).toContain(prettierignore);
+  expect(sections).toHaveProperty("eslint");
+  expect(sections["eslint"]).toContain(eslintignore);
 });
 
 test(".ignorefile split results in multiple files", async () => {

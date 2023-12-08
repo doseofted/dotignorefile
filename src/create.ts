@@ -19,8 +19,10 @@ export async function createIgnorefile(files: File[]) {
 
 export async function findIgnorefile() {
   try {
-    await fs.stat(".ignorefile");
-    return true;
+    return new File(
+      [await fs.readFile(".ignorefile", { encoding: "utf-8" })],
+      ".ignorefile",
+    );
   } catch (error) {
     return false;
   }

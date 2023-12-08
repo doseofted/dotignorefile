@@ -1,6 +1,7 @@
 import { File } from "node:buffer";
+import * as fs from "node:fs/promises";
 
-const defaultIgnoreSection = "[git]";
+const defaultIgnoreSection = "git";
 export function splitIgnoreFileContent(fileContents: string) {
   const ignoreFile = fileContents;
   let currentSection = null;
@@ -9,7 +10,7 @@ export function splitIgnoreFileContent(fileContents: string) {
   const newlineRegex = /(\r?\n)/g;
   const lines = ignoreFile.split(newlineRegex);
   for (const [index, line] of lines.entries()) {
-    const [possibleSection] = line.match(/^\[(\w)+\]$/) || [];
+    const [, possibleSection] = line.match(/^\[(\w+)\]$/) || [];
     const newSection = possibleSection || index === lines.length - 1;
     if (newSection && currentFile) {
       sections[currentSection] = currentFile;
@@ -32,4 +33,10 @@ export async function splitIgnoreFile(file: File) {
     return new File([fileContents], `.${name}ignore`);
   });
   return files;
+}
+
+export async function createIgnores(files: File[]) {
+  for (const file of files) {
+    await fs.writeFile(file.name, await file.text(), { encoding: "utf-8" });
+  }
 }
