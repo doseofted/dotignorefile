@@ -4,6 +4,10 @@
 
 ![.ignorefile example](./.github/ignorefile.png)
 
+[![npm](https://img.shields.io/npm/v/dotignorefile)](https://www.npmjs.com/package/dotignorefile)
+[![npm license](https://img.shields.io/npm/l/dotignorefile)](https://spdx.org/licenses/MIT.html)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/dotignorefile/latest)](https://bundlephobia.com/package/dotignorefile@latest)
+
 This is an attempt to [make a standard](https://xkcd.com/927/) for various ignore files in a single `.ignorefile` file. It is an INI-like file where contained in each section is the content of that specific ignore file.
 
 This repository also serves as a tool to read the `.ignorefile` (as a step to be run with some postinstall or git hook) and generate the specific ignore files as utilized by applications, while also appending to or creating a `.gitignore` file that ignores the ignore files, so they're not uploaded to git.
