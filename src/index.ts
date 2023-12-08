@@ -1,1 +1,1 @@
-export * from "./ignorefile";
+export { splitIgnoreFile } from "./split";

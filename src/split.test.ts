@@ -1,7 +1,6 @@
 import { File } from "node:buffer";
 import { expect, test } from "vitest";
-import * as ignorefile from "./ignorefile";
-// import * as fs from "node:fs/promises"
+import * as ignorefile from "./split";
 
 const gitignore = `
 # .ignorefile-related

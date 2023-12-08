@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// import * as ignorefile from ".";
 import { echo, fs } from "zx";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as ignorefile from ".";
 
 const files = await fs.readdir(".", { withFileTypes: true });
 const ignoreFiles = files.filter(

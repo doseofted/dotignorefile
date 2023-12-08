@@ -5,6 +5,9 @@
 # build-related
 node_modules/
 dist/
+# OS-related
+.DS_STORE
+Thumbs.db
 
 [prettier]
 dist/
