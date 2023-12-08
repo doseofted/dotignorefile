@@ -13,7 +13,7 @@ It's created in TypeScript to iterate quickly but may be rewritten in a language
 The command for generating the file will be ran like so (**it's a WIP**):
 
 ```zsh
-npx dotignorefile
+npx dotignorefile@latest
 ```
 
 ## Development
@@ -23,6 +23,12 @@ npx dotignorefile
 nvm install
 # enable Corepack so pnpm gets installed automatically
 corepack enable
-# Build project
+# Build project (or `pnpm dev` for watch mode)
 pnpm build
+```
+
+## Release
+
+```zsh
+pnpm changeset
 ```

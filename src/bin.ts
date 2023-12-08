@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // import * as ignorefile from ".";
-import { $, echo, fs } from "zx";
+import { echo, fs } from "zx";
 
 const files = await fs.readdir(".", { withFileTypes: true });
 const ignoreFiles = files.filter(
