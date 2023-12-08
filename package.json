@@ -39,10 +39,12 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup --config build.config.ts",
+    "dev": "tsup --watch --config build.config.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "cli": "node dist/bin.js",
-    "test": "vitest"
+    "test": "vitest",
+    "changeset": "changeset"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -57,5 +59,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "zx": "^7.2.3"
+  }
 }

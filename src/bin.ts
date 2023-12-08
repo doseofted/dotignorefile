@@ -1,6 +1,13 @@
 #!/usr/bin/env node
-import * as ignorefile from ".";
+// import * as ignorefile from ".";
+import { $, echo, fs } from "zx";
 
-console.log("It's a WIP: we'll get there!");
+const files = await fs.readdir(".", { withFileTypes: true });
+const ignoreFiles = files.filter(
+  (file) => file.isFile() && file.name.endsWith("ignore"),
+);
 
-export default ignorefile;
+echo`It's a WIP: in the future, we'll create ignore files from your .ignorefile!\n`;
+echo`Found ignore files (none were modified):\n\n${ignoreFiles
+  .map((file) => file.name)
+  .join("\n")}`;
