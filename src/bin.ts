@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as ignorefile from ".";
 
 console.log("It's a WIP: we'll get there!");
