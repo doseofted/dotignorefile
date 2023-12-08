@@ -1,5 +1,12 @@
 # dotignorefile
 
+## 0.0.4
+
+### Patch Changes
+
+- d0d5d4e: .ignorefile can be created from ignore files
+- d0d5d4e: Ignore files can now be created from .ignorefile
+
 ## 0.0.3
 
 ### Patch Changes
