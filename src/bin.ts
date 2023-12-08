@@ -37,5 +37,6 @@ const create = ["y", "yes"].includes(answer);
 if (create) {
   const ignoreFiles = await splitIgnoreFile(found);
   await createIgnores(ignoreFiles);
+  await appendIgnoresToGitignore();
   echo`Ignore files have been created from your .ignorefile`;
 }
